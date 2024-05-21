@@ -1,0 +1,29 @@
+.main-background {
+    -fx-background-color: #F0F0F0;
+}
+
+.header-box {
+    -fx-background-color: #EFEFEF;
+    -fx-padding: 10px;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-family: 'Helvetica Neue';
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5px;
+}
+
+.bottom-box {
+    -fx-background-color: #EFEFEF;
+    -fx-padding: 10px;
+}
+
+.button {
+    -fx-font-family: 'Helvetica Neue';
+    -fx-background-radius: 10px;
+}

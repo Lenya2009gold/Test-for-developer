@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+
+<?import javafx.scene.web.HTMLEditor?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="severstal.demo2.NoteAppController" stylesheets="@style.css" styleClass="main-background">
+    <top>
+        <HBox styleClass="header-box">
+            <Label text="Notes" styleClass="header-label"/>
+        </HBox>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.3">
+            <ListView fx:id="notesListView" />
+        </SplitPane>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="center" styleClass="bottom-box">
+            <TextField fx:id="noteTextField" HBox.hgrow="ALWAYS" />
+            <Button text="Add Note" onAction="#handleAddNote" styleClass="button"/>
+            <Button text="Delete Note" onAction="#handleDeleteNote" styleClass="button"/>
+            <Button text="Edit Note" onAction="#handleEditNote" styleClass="button"/>
+
+        </HBox>
+    </bottom>
+</BorderPane>
