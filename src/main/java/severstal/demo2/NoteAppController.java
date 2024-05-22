@@ -38,7 +38,7 @@ public class NoteAppController {
         Alert conf = new Alert(Alert.AlertType.CONFIRMATION);
         conf.setTitle("Подтверждение");
         conf.setHeaderText(null);
-        conf.setContentText("Вы точно хотите добавить?");
+        conf.setContentText("Вы точно хотите удалить эту заметку?");
         Optional<ButtonType> action = conf.showAndWait();
         if ((action.isPresent()) && (action.get() == ButtonType.OK)) {
             noteManager.deleteNote(notesListView.getSelectionModel().getSelectedIndex());

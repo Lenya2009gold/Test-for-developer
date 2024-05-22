@@ -8,7 +8,9 @@ public class Note implements Serializable {
     public Note(String text) {
         this.text = text;
     }
+    public Note() {
 
+    }
     public String getText() {
         return text;
     }
